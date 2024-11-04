@@ -16,7 +16,7 @@
 --second-color:rgb(17, 53, 69); ;
 --first-shadow-color:#000000; ;
 }
-
+                         /* Structural selectors */
 *{
     margin: 0;
     padding: 0;
@@ -95,7 +95,7 @@ nav{
 .nav-log{
     position: relative;
 }
-
+                                     /* Gradient */
 .nav-name {
     font-size: 30px;
     font-weight: 600;
@@ -213,13 +213,14 @@ nav{
     margin-top: 5em;
     gap: 30px;
 }
-
+                   
 .icons{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
+                         /* Round corners */
     border-radius: 50%;
     color: #6d6d6d;
     box-shadow: 0px 2px 5px 0px rgba(8, 255, 54, 0.822);
@@ -238,12 +239,14 @@ nav{
     min-height: 80vh;
     width: 50%;
 }
+                         
 .image{
     margin: auto 0;
     width: 380px;
     height: 380px;
     border-radius: 45% 25% 45% 25%;
     overflow: hidden;
+                                   /* Animations */
     animation: imgFloat 4s ease-in-out infinite;
 }
 .image img{
@@ -251,6 +254,7 @@ nav{
     height: 380px;
     object-fit: cover;
 }
+                           /* Transforms */
 @keyframes imgFloat{
     50%{
         transform: translateY(15px);
@@ -305,9 +309,11 @@ h3{
     padding-inline: 20px;
     width: 100%;
     background: var(--second-color);
+                                            /* shadows */
     box-shadow: 1px 8px 20px 2px var(--first-shadow-color);
     border-radius: 20px;
 }
+                         /* Text Element Text overflow */
 .about-info p{
     text-align: center;
     font-size: 15px;
@@ -364,6 +370,7 @@ h3{
     gap: 20px;
     flex-wrap: wrap;
 }
+                               
 .project-box{
     position: relative;
     display: flex;
@@ -377,15 +384,17 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
+                                   /* Boders */
 .project-box:not(.featured) {
     border: 1px solid var(--first-shadow-color);
 }
-
+                                   /* transform */
 .project-box:not(.featured):hover {
     transform: scale(1.03);
     background: var(--second-color);
 }
 
+                            
 .project-box>i{
     font-size: 50px;
     color:var(--first-color);
@@ -395,9 +404,11 @@ h3{
     font-size: 15px;
     color: var(--first-color);
 }
+                            /* Child combinator */
 .project-box>h3{
     color: var(--color-white);
 }
+                                   /* Transitions */
 .project-box::after, .contact-info::after{
     content: "";
     position: absolute;
@@ -440,10 +451,12 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
+                              
 .contact-info>h2{
     color: var(--first-color);
     margin-bottom: 20px;
 }
+                               
 .contact-info>p{
     display: flex;
     align-items: center;
@@ -451,9 +464,11 @@ h3{
     color: var(--color-white);
     margin-block: 5px;
 }
+                               /* Child combinator */
 .contact-info p>i{
     font-size: 15px;
 }
+                               /* Pseudo elements  */
 .contact-info::after{
     background: var(--first-color-hover);
 }
@@ -463,7 +478,7 @@ h3{
     color: #000000;
     z-index: 2;  
 }
-/* Validity Pseudo-Class */
+                               /* Validity Pseudo-Class */
 input:valid {
     border-color: #28a745;
 }
@@ -484,7 +499,7 @@ input:invalid {
     gap: 10px;
     width: 100%;
 }
-/* Attribute Selectors */
+                          /* Attribute Selectors */
 input[type="text"],
 input[type="email"]{
     width: 50%;
@@ -506,7 +521,7 @@ textarea{
     outline: none;
     resize: none;
 }
-
+                           /* Validity pseudo class */
     input:valid {
         border-color: #28a745;
     }
@@ -523,6 +538,7 @@ textarea{
     background: var(--first-color-hover);
     color: var(--color-white);
 }
+                               /* pseudo class */
 .form-button>.btn:hover{
     background: rgb(14, 250, 18);
 }
