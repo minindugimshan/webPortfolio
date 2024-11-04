@@ -206,6 +206,7 @@ nav{
 .featured-text-btn>.blue-btn:hover{
     background: var(--first-color-hover);
 }
+/* social media icons */
 
 .social_icons{
     display: flex;
@@ -220,7 +221,7 @@ nav{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: #000;
+    color: #6d6d6d;
     box-shadow: 0px 2px 5px 0px rgba(8, 255, 54, 0.822);
     cursor: pointer;
 
@@ -513,6 +514,8 @@ textarea{
     input:invalid {
         border-color: #dc3545;
     }
+
+    /* send button */
 .form-button>.btn{
     display: flex;
     align-items: center;
